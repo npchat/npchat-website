@@ -1,4 +1,4 @@
-# nsphoto2
+# npchat.org website
 
 Website for npchat.org, built with Hugo.
 
