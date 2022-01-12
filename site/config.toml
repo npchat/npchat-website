@@ -17,10 +17,15 @@ enableEmoji = true
 	url = "/"
 	weight = 1
 [[menu.main]]
-	name = "Donate"
-	url = "/donate"
+	name = "Docs"
+	url = "/docs"
 	weight = 2
 [[menu.main]]
-	name = "Privacy Policy"
-	url = "/privacy"
+	name = "Donate"
+	url = "/donate"
 	weight = 3
+
+[markup]
+	[markup.highlight]
+		style = "monokailight"
+		tabWidth = 2

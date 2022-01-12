@@ -1,7 +1,7 @@
 ---
 title: npchat
-subtitle: Communicate privately, with freedom & control
+subtitle: Communicate privately & anonymously
 intro: npchat is an open-source decentralised communications protocol
-description: npchat is a project that aims to revolutionise private & secure communication by empowering users to host their own server and choose any client (or build one).
+description: We aim to revolutionise communication by empowering users. Use it, host it & build with it. Official iOS & Android apps coming soon.
 cta: Try it out
 ---

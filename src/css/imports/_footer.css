@@ -49,6 +49,10 @@ ul.social svg, ul.social a {
 	height: 100%;
 }
 
+footer h3 {
+	color: #777;
+}
+
 @media (min-width: 720px) {
 	footer > div {
 		max-width: 700px;
