@@ -91,13 +91,13 @@ nav.active li a {
 		background-color: #101010;
 }
 
-header img.logo {
+img.logo {
 	margin: 5px;
 	width: 45px;
 	height: 45px;
 }
 
-header img.icon {
+img.icon {
 	width: 30px;
 	height: 30px;
 }

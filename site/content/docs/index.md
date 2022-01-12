@@ -1,5 +1,6 @@
 ---
 title: Docs
+description: These docs should help you to build stuff with npchat. This is a work in progress.
 ---
 ## Transport
 ### Incoming

@@ -21,8 +21,9 @@ enableEmoji = true
 	url = "/docs"
 	weight = 2
 [[menu.main]]
-	name = "Donate"
-	url = "/donate"
+	name = "Webapp"
+	url = "https://app.npchat.org/"
+	post = "noopener"
 	weight = 3
 
 [markup]
