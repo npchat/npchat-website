@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	background-color: var(--color-bg);
+	-webkit-text-size-adjust: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+[hidden] {
+	display: none !important;
+}

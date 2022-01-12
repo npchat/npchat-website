@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+<article>
+	<section class="hero">
+		<h1>{{ .Params.title }}</h1>
+		<h2>{{ .Params.subtitle }}</h2>
+	</section>
+	<section>
+		<h3>{{ .Params.intro }}</h3>
+		<h3>{{ .Params.description }}</h3>
+		<div>
+			<a href="https://app.npchat.org/" target="_blank" rel="noopener" class="cta no-hover">
+				{{ .Params.cta}}
+			</a>
+		</div>
+	</section>
+</article>
+
+{{ end }}

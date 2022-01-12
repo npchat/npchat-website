@@ -1,0 +1,26 @@
+baseURL = "/"
+
+title = "npchat"
+
+enableRobotsTXT = true
+
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration   
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+enableEmoji = true
+
+[menu]
+[[menu.main]]
+	name = "Home"
+	url = "/"
+	weight = 1
+[[menu.main]]
+	name = "Donate"
+	url = "/donate"
+	weight = 2
+[[menu.main]]
+	name = "Privacy Policy"
+	url = "/privacy"
+	weight = 3

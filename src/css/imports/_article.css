@@ -1,0 +1,43 @@
+article section {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	padding: 10px 0;
+}
+
+article section.padding-side {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+article .limit-width {
+	align-self: center;
+	width: calc(100% - 10px);
+	padding: 10px 5px;
+}
+
+article .metadata {
+	display: flex;
+	justify-content: space-between;
+}
+
+article .metadata .tags {
+	text-transform: uppercase;
+}
+
+article .metadata .tags span:not(:last-of-type):after {
+	content: ",";
+}
+
+@media (min-width: 710px) {
+	article {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	article .limit-width {
+		width: 700px;
+		padding: 10px 0;
+	}
+}

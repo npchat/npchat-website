@@ -1,0 +1,11 @@
+<a href="{{ .RelPermalink }}" class="list-item no-hover">
+	<div class='item-details'>
+		<h2>{{ .Title }}</h2>
+		{{ if .Date }}
+			<p class="light">{{ .Date.Format "2006-01-02" }}</p>
+		{{ end }}
+		{{ if .Description }}
+			<p>{{.Description }}</p>
+		{{ end }}
+	</div>
+</a>

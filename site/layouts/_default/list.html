@@ -1,0 +1,13 @@
+{{ define "main" }}
+	<article>
+		<section class="limit-width">
+			<h1>{{  (lower .Title) }}</h1>
+			<div class="list">
+				{{ range (.Paginator 16).Pages.ByPublishDate }}
+						{{ .Render "li"}}
+				{{ end }}
+			</div>
+			{{ partial "pagination" . }}
+		</section>
+	</article>
+{{end}}
