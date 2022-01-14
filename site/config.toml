@@ -25,6 +25,10 @@ enableEmoji = true
 	url = "https://app.npchat.org/"
 	post = "noopener"
 	weight = 3
+[[menu.main]]
+	name = "Status"
+	url = "/status"
+	weight = 4
 
 [markup]
 	[markup.highlight]

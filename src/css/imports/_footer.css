@@ -24,7 +24,7 @@ footer ul li a {
 }
 
 footer h3 {
-	color: #777;
+	color: var(--color-grey);
 }
 
 @media (min-width: 720px) {

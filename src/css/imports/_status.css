@@ -1,0 +1,11 @@
+li[data-status-url] h2 {
+	color: var(--color-secondary)
+}
+
+li[data-status-url].healthy h2 {
+	color: var(--color-tertiary)
+}
+
+code[data-status-info] {
+	word-break: break-all;
+}

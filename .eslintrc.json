@@ -61,7 +61,7 @@
 		],
 		"quotes": [
 			2,
-			"single"
+			"double"
 		],
 		"semi": [1, "never"],
 		"space-before-blocks": [
