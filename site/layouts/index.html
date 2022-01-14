@@ -1,17 +1,29 @@
 {{ define "main" }}
 
 <article>
-	<section class="limit-width hero super">
+	<section class="limit-width">
 		<h1>{{ .Params.title }}</h1>
 		<h2>{{ .Params.subtitle }}</h2>
 	</section>
-	<section class="limit-width hero">
+	<section class="limit-width">
 		<h3>{{ .Params.intro }}</h3>
 		<p>{{ .Params.description }}</p>
 		<div>
 			<a href="https://app.npchat.org/" target="_blank" rel="noopener" class="cta no-hover">
 				{{ .Params.cta }}
 			</a>
+		</div>
+	</section>
+	<section class="hero colorful">
+		<div class="limit-width">
+			<ul class="flex">
+				{{ range .Params.features }}
+				<li class="box">
+					<h3>{{ .title }}</h3>
+					<p>{{ .description }}</p>
+				</li>
+				{{ end }}
+			</ul>
 		</div>
 	</section>
 </article>

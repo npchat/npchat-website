@@ -1,6 +1,7 @@
 {{ define "main" }}
 	<article>
 		<section class="limit-width">
+			{{ partial "breadcrumb" . }}
 			<h1>{{.Title}}</h1>
 			<p>{{ .Description }}</p>
 			{{ .Content }}

@@ -1,0 +1,14 @@
+ol.breadcrumb {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+ol.breadcrumb li {
+	margin: 0 10px 10px 0;
+}
+ol.breadcrumb li:not(:last-of-type)::after {
+	margin: 0 10px;
+	content: ">";
+}

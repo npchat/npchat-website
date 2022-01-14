@@ -1,7 +1,8 @@
 {{ define "main" }}
 	<article>
 		<section class="limit-width">
-			<h1>{{  (lower .Title) }}</h1>
+			{{ partial "breadcrumb" . }}
+			<h1>{{ .Title }}</h1>
 			<div class="list">
 				{{ range (.Paginator 16).Pages.ByPublishDate }}
 						{{ .Render "li"}}

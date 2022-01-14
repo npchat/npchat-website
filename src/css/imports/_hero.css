@@ -1,3 +1,8 @@
-.hero h2 {
-	color: #777;
+.hero {
+	width: 100%;
+	margin: 50px 0;
+}
+
+.hero.colorful {
+	background: linear-gradient(-45deg, var(--color-tertiary), var(--color-primary) 50%)
 }

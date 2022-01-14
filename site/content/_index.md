@@ -8,7 +8,7 @@ features:
   - title: End-to-end encrypted
     description: Using ECDH AES-GCM 256, only you & the recipient can read your messages.
   - title: Cryptographically verified
-    decription: Messages are signed using ECDSA P-256. This prevents messages from being modified or forged.
+    description: Messages are signed using ECDSA P-256. This prevents messages from being modified or forged.
   - title: BYOS (bring your own server)
     description: You are welcome to host the service on your own infrastructure. There is a Docker container ready.
   - title: Open-source
@@ -16,7 +16,7 @@ features:
   - title: Anonymous
     description: No registration; no personal information stored.
   - title: Contacts synced
-    descrioption: The server allows you to store (by default) up to 2MB of contacts. This means that your contacts remain synced across devices.
+    description: Your contacts can be encrypted & stored on the server, and synced by all of your devices.
   - title: WebPush
     description: Recieve push-notifications when you get messages
   - title: WebRTC
