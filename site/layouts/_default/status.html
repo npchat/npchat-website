@@ -4,12 +4,12 @@
 		<section class="limit-width">
 			<h1>{{ .Title }}</h1>
 			<p>{{ .Description }}</p>
-			{{ range .Params.servers }}
-			<div class="server" data-status-url="{{ . }}">
+			{{ range .Params.services }}
+			<div class="service" data-service-url="{{ . }}">
 				<h2>{{ . }}</h2>
-				<code>Started: <span data-status-age></span></code>
+				<code>Started: <span data-service-age></span></code>
 				<code>curl --request GET '{{ . }}/info'</code>
-				<code data-status-info></code>
+				<code data-service-info></code>
 			</div>
 			{{ end }}
 		</section>

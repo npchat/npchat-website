@@ -27,7 +27,7 @@ a:not(.no-hover):hover::after,
 a.cta {
 	display: inline-block;
 	padding: 20px;
-	border-radius: 10px;
+	border-radius: 5px;
 	background-color: var(--color-dark);
 	color: var(--color-light);
 	font-size: 1.2rem;

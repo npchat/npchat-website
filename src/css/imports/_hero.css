@@ -4,5 +4,5 @@
 }
 
 .hero.colorful {
-	background: linear-gradient(-45deg, var(--color-tertiary), var(--color-primary) 50%)
+	background: linear-gradient(-45deg, var(--color-grey), var(--color-dark) 50%)
 }

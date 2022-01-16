@@ -1,8 +1,24 @@
-.server h2 {
+.service {
+	background-color: var(--color-dark);
+	color: var(--color-light);
+	border-radius: 5px;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.service h2 {
 	color: var(--color-secondary);
 	margin: 0;
 }
 
-.server.healthy h2 {
+.service.healthy h2 {
 	color: var(--color-tertiary);
+}
+
+.service code {
+	word-break: break-all;
+	white-space: pre-wrap;
+	tab-size: 20px;
+	display: block;
+	font-size: 0.75rem;
 }

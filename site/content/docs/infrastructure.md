@@ -11,36 +11,18 @@ docker run -p 8000:8000 druseless/go-npchat:latest
 ```
 
 ## Fly.io
-You could easily deploy the go-npchat Docker image on fly.io.
-The following config should get you started:
-```toml
-# fly.toml
-app = "juicy-npchat-server"
-
-[env]
-  PORT = "8080"
-
-[[services]]
-  internal_port = 8080
-  protocol = "tcp"
-
-  [services.concurrency]
-    hard_limit = 25
-    soft_limit = 20
-    type = "connections"
-
-  [[services.ports]]
-    handlers = ["http"]
-    port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
-
-  [[services.tcp_checks]]
-    grace_period = "1s"
-    interval = "15s"
-    timeout = "2s"
+You can easily deploy the go-npchat Docker image on fly.io. A `fly.toml` config is included in the repository.
+```bash
+# install flyctl
+brew install superfly/tap/flyctl
+# authenticate with fly.io
+flyctl auth signup
+# clone repo to your local machine
+git clone https://github.com/npchat/go-npchat
+# initialise & deploy the app
+flyctl launch
+# show hostname of deployment
+flyctl info
 ```
 
 ## Helmsman

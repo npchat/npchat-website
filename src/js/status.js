@@ -1,30 +1,30 @@
 import {ready} from "./async"
 
 ready().then(() => {
-	const servers = Array.from(document.querySelectorAll("[data-status-url]"))
-	servers.forEach(server => {
-		const url = new URL("/info", server.dataset.statusUrl)
+	const services = Array.from(document.querySelectorAll("[data-service-url]"))
+	services.forEach(service => {
+		const url = new URL("/info", service.dataset.serviceUrl)
 		fetch(url.toString()).then(response => {
 			response.text().then(info => {
-				server.querySelector("[data-status-info]").textContent = info
+				service.querySelector("[data-service-info]").textContent = info
 				const json = JSON.parse(info)
 				if (json.status === "healthy") {
-					server.classList.add("healthy")
+					service.classList.add("healthy")
 				}
-				displayAge(server, json.startTime)
+				displayAge(service, json.startTime)
 				setInterval(() => {
-					displayAge(server, json.startTime)
+					displayAge(service, json.startTime)
 				}, 1000)
 			})
 		})
 	})
 })
 
-function displayAge(server, startTime) {
+function displayAge(service, startTime) {
 	const age = Math.floor((Date.now() - Date.parse(startTime)) / 1000)
 	const rtf = new Intl.RelativeTimeFormat()
 	const opt = getFormatOptions(age)
-	server.querySelector("[data-status-age]")
+	service.querySelector("[data-service-age]")
 		.textContent = rtf.format(-Math.floor(opt.value), opt.scale)
 }
 
