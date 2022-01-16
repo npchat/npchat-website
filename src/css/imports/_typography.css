@@ -44,4 +44,8 @@ h6 {
 
 code {
 	word-break: break-all;
+	white-space: pre-wrap;
+	tab-size: 20px;
+	display: block;
+	font-size: 0.75rem;
 }

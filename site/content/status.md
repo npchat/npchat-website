@@ -4,4 +4,5 @@ description: See the current status & parameters of official servers.
 layout: status
 servers:
   - https://axl.npchat.org
+  - https://frosty-meadow-296.fly.dev
 ---
