@@ -33,4 +33,3 @@ enableEmoji = true
 [markup]
 	[markup.highlight]
 		noclasses = false
-		

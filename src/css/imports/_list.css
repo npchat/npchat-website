@@ -1,0 +1,10 @@
+a.list-item {
+	transition: all 300ms ease-in-out;
+	display: block;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+a.list-item:hover {
+	background-color: var(--color-grey-light);
+}

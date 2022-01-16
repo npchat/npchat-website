@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <article>
 	<section class="limit-width">
 		<h1>{{ .Params.title }}</h1>
@@ -8,7 +7,7 @@
 	<section class="limit-width">
 		<h3>{{ .Params.intro }}</h3>
 		<p>{{ .Params.description }}</p>
-		<div>
+		<div class="flex center-x">
 			<a href="https://app.npchat.org/" target="_blank" rel="noopener" class="cta no-hover">
 				{{ .Params.cta }}
 			</a>
@@ -18,7 +17,7 @@
 		<div class="limit-width">
 			<ul class="flex">
 				{{ range .Params.features }}
-				<li class="box">
+				<li class="box bg">
 					<h3>{{ .title }}</h3>
 					<p>{{ .description }}</p>
 				</li>
@@ -27,5 +26,4 @@
 		</div>
 	</section>
 </article>
-
 {{ end }}
