@@ -1,5 +1,7 @@
 code {
   display: inline-block;
+  white-space: pre-wrap;
+  tab-size: 20px;
   padding: 2px 4px;
   border-radius: 5px;
   color: var(--color-light);

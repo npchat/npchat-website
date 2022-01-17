@@ -1,9 +1,20 @@
 ---
-title: Infrastructure
+title: Hosting
 description: Guidance for hosting on your own infrastructure.
 ---
+## Build container image
+Use the Makefile in the go-npchat repo to build the image using Docker. You must have the Docker daemon installed & running.
+```zsh
+# clone the repo
+git clone https://github.com/npchat/go-npchat
+# change directory
+cd go-npchat
+# build image using Makefile & Docker daemon
+make build
+```
+
 ## Docker
-There are many advantages of running this service inside a container. If you have a Synology, this method is a perfect fit.
+There are many advantages of running this service inside a container. If you have a Synology, this approach is a perfect fit.
 
 ```bash
 docker pull druseless/go-npchat:latest
@@ -19,6 +30,8 @@ brew install superfly/tap/flyctl
 flyctl auth signup
 # clone repo to your local machine
 git clone https://github.com/npchat/go-npchat
+# change directory
+cd go-npchat
 # initialise & deploy the app
 flyctl launch
 # show hostname of deployment
@@ -32,5 +45,22 @@ Each instance of the npchat server is defined in a config file. The id for each 
 
 This ensures that traffic is fairly evenly distributed across nodes. It also ensures that multiple requests for a single id will be routed deterministically to the same node. This means that state must not be shared across nodes.
 
-## Kubernetes
-Kubernetes can be used to deploy a cluster of go-npchat servers. Helmsman could be used as the load-balancer, by defining a service for each pod. Each service could then be added to Helmsman's config.
+### Configuration
+An example configuration file would look like:
+```json
+{
+	"port": 8080,
+	"nodes": [
+		{
+			"name": "axl",
+			"host": "axl.npchat.org",
+			"tls": true
+		},
+		{
+			"name":"wispy-feather-9047",
+			"host": "wispy-feather-9047.fly.dev",
+			"tls": true
+		}
+	]
+}
+```
