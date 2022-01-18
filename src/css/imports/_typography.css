@@ -41,3 +41,7 @@ h6 {
 .light {
 	color: var(--color-grey);
 }
+
+.emojicon {
+	font-size: 5rem;
+}

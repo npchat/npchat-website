@@ -15,14 +15,26 @@
 	</section>
 	<section class="hero colorful">
 		<div class="limit-width">
-			<ul class="flex">
-				{{ range .Params.features }}
-				<li class="box bg">
-					<h3>{{ .title }}</h3>
-					<p>{{ .description }}</p>
-				</li>
+			<div class="reveal-container">
+				{{ range $i, $f := .Params.features }}
+				{{ $c1 := ""}}
+				{{ $c2 := ""}}
+				{{ if not (modBool $i 2) }}
+					{{ $c1 = "from-right" }}
+					{{ $c2 = "from-left" }}
+				{{ else }}
+					{{ $c1 = "from-left" }}
+					{{ $c2 = "from-right" }}
 				{{ end }}
-			</ul>
+				<div class="flex center-x center-y box">
+					<span class="emojicon reveal {{ $c1 }}">{{$f.icon}}</span>
+					<div class="bg reveal {{ $c2 }}">
+						<h3>{{ $f.title }}</h3>
+						<p>{{ $f.description }}</p>
+					</div>
+				</div>
+				{{ end }}
+			</div>
 		</div>
 	</section>
 </article>

@@ -1,32 +1,14 @@
 .flex {
 	display: flex;
 	flex-wrap: wrap;
-	list-style: none;
 	padding: 0;
 	margin: 0;
-}
-
-.flex .box {
-	padding: 10px;
-	width: 100%;
-	border-radius: 5px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-
-.box.bg {
-	background-color: rgba(255,255,255,0.85);
 }
 
 .flex.center-x {
 	justify-content: center;
 }
 
-@media (min-width: 710px) {
-	.flex .box {
-		max-width: calc(50% - 35px);
-	}
-	.flex .box:nth-of-type(2n) {
-		margin-left: 20px;
-	}
+.flex.center-y {
+	align-items: center;
 }

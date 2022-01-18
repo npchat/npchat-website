@@ -6,3 +6,28 @@
 .hero.colorful {
 	background: linear-gradient(-45deg, var(--color-grey), var(--color-dark) 50%)
 }
+
+.hero .box {
+	margin: 50px auto;
+	max-width: 300px;
+}
+
+.hero .box .bg {
+	background-color: var(--color-grey-light);
+	padding: 20px;
+	border-radius: 10px;
+}
+
+@media (min-width: 600px) {
+	.hero .flex {
+		flex-wrap: nowrap;
+	}
+
+	.hero .box {
+		max-width: 450px;
+	}
+
+	.hero .reveal.bg {
+		margin-left: 10px;
+	}
+}

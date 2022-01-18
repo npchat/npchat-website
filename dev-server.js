@@ -7,7 +7,7 @@ import path from "path"
 const liveReloadServer = livereload.createServer()
 liveReloadServer.watch(path.resolve("dist"))
 
-const appPort = 3001
+const appPort = 3000
 
 const app = express()
 
