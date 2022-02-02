@@ -1,18 +1,19 @@
 code {
   display: inline-block;
   white-space: pre-wrap;
+  overflow-wrap: anywhere;
   tab-size: 20px;
   padding: 2px 4px;
   border-radius: 5px;
-  color: var(--color-light);
-	background-color: var(--color-dark);
+  color: var(--offwhite);
+	background-color: var(--offblack);
 }
 
 .chroma {
   padding: 10px;
   border-radius: 5px;
-  color: var(--color-light);
-  background-color: var(--color-dark);
+  color: var(--offwhite);
+  background-color: var(--offblack);
 }
 .chroma .err {
   color: #f85149;

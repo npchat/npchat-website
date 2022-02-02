@@ -3,8 +3,9 @@ a.list-item {
 	display: block;
 	padding: 10px 20px;
 	border-radius: 5px;
+	background-color: transparent;
 }
 
 a.list-item:hover {
-	background-color: var(--color-grey-light);
+	background-color: var(--darkwhite);
 }

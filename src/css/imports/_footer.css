@@ -2,7 +2,7 @@ footer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	border-top: 1px solid var(--color-bg-dark);
+	border-top: 1px solid var(--grey);
 }
 
 footer > div {
@@ -24,7 +24,7 @@ footer ul li a {
 }
 
 footer h3 {
-	color: var(--color-grey);
+	color: var(--grey);
 }
 
 @media (min-width: 720px) {

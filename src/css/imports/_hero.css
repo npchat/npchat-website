@@ -4,7 +4,7 @@
 }
 
 .hero.colorful {
-	background: linear-gradient(-45deg, var(--color-grey), var(--color-dark) 50%)
+	background: linear-gradient(135deg, var(--primary), var(--secondary) 50%)
 }
 
 .hero .box {
@@ -13,7 +13,7 @@
 }
 
 .hero .box .bg {
-	background-color: var(--color-grey-light);
+	background-color: var(--offwhite);
 	padding: 20px;
 	border-radius: 10px;
 }

@@ -26,7 +26,7 @@ features:
   - title: Push notifications
     description: Thanks to WebPush, recieve notifications when you get messages.
     icon: 🔔
-  - title: Voice & video calls (coming soon)
+  - title: Voice & video calls
     description: Use the power of WebRTC to make p2p calls with audio & video.
     icon: 📞
 ---
