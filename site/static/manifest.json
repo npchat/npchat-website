@@ -1,21 +1,17 @@
 {
-	"name": "npchat",
-	"short_name": "npchat",
+	"name": "npchat-website",
+	"short_name": "npchat-site",
 	"icons": [
 		{
-			"src": "\/media\/icon-180.png",
-			"sizes": "180x180",
-			"type": "image\/png"
-		},
-		{
-			"src": "\/media\/icon-192.png",
-			"sizes": "192x192",
-			"type": "image\/png"
-		},
-		{
-			"src": "\/media\/icon-512.png",
+			"src": "media/npchat-logo-maskable.png",
 			"sizes": "512x512",
-			"type": "image\/png"
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "media/npchat-logo-maskable.png",
+			"sizes": "512x512",
+			"type": "image/png"
 		}
 	],
 	"start_url": "https://npchat.org",
